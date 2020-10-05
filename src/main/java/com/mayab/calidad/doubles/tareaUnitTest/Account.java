@@ -37,7 +37,6 @@ public class Account implements AlertListener{
     double debit(double balance) { 
         this.balance -= balance;
         if(this.balance < 100){
-            //alerts.sendAlert(this.holder + ", your account balance is below 100");
         	sendAlert("String");
         	sendAlert(this.getHolder() + ", your account balance is below 100");
         }
